@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h3>login</h3>
+    <form form="login_form" onsubmit="submit_form()">
+        <h4>username</h4>
+        <input type="text" placeholder="enter your email_id = ">
+        <h4>password</h4>
+        <input type="password" placeholder="enter your password">
+        <br><br>
+        <input type="submit" value="login"/>
+        <input type="button" value="signup" onclick="create()"/>
+    </form>
+    <script type="text/javascript">
+        function submit_form()
+        {
+            alert("login suceesfully");
+        }
+        function create()
+        {
+            window.location="signup.html";
+        }
+    </script>
+</body>
+</html>

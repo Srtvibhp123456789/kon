@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        student grade calculator
+    </h1>
+    
+    <script>
+        //get student name user input
+        var studentname=prompt("enter your name")git remote add origin https://github.com/Srtvibhp123456789/kon.git
+
+
+        //display student name
+        document.write("student name =" +studentname + "<br>");
+
+        //input marks for english hindi maths
+        var eng=parseFloat(prompt("enter your english marks"));
+        var hind=parseFloat(prompt("enter your hinid marks"));
+        var math=parseFloat(prompt("enter your math marks"));     
+        
+        //calculate obtained marks and percentage
+        var obtainedmarks=math+eng+hind;
+        var percentage=(obtainedmarks/300)*100;
+
+        //display subject-wise marks
+        document.write("english marks ="+ eng +"<br>");
+        document.write("english marks ="+ hind +"<br>");
+        document.write("english marks ="+ math +"<br>");
+
+        //display obtained marks and percentage
+        document.write("obtained marks = " + obtainedmarks +"<br>");
+        document.write("obtained marks = " + percentage.toFixed(2) + "%" + "<br>");
+
+        //determine and display the grade based on the percentage
+        if(percentage <=100 && percentage >= 80)
+        {
+            document.write("grade: a+")
+        }
+        else if(percentage <=79 && percentage >= 70)
+        {
+            document.write("grade: a")
+        }
+        else if(percentage <=69 && percentage >= 60)
+        {
+            document.write("grade: b")
+        }
+        else if(percentage <=59 && percentage >= 50)
+        {
+            document.write("grade: c")
+        }
+        else
+        {
+            document.write("Result : Fail")
+        }
+
+    </script>
+</body>
+</html>

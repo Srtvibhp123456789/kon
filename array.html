@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript1.js"></script>
+</head>
+<body>
+    <p id="demo1">
+        the write code is demolition
+    </p>
+    <p id="demo3">lucent</p>
+    <p id="demo4"></p>
+    <p id="demo5">the dark</p>
+   <p id="demo">javascript can change data</p>
+   
+   <button type="button" onclick="myfunction()">click me</button>
+   <script>
+    let x1=123e5;
+    document.getElementById("demo").innerHTML=x1;
+    var z_in=7;
+   function myfunction(){
+        let x_mast;
+        const car={type:"fiat",model:"500",color:"white"};
+        car.color="red";
+        car.owner="johnson";
+        document.getElementById("demo4").innerHTML="car owner is"+car.owner;
+        let z_in="sakti";
+        
+        let $="hellow world";
+        x_mast=10.5;
+        let y=6;
+        let z=x_mast+y +z_in;
+    document.getElementById("demo").innerHTML=z;
+    document.getElementById("demo3").innerHTML=$;
+    document.getElementById("demo1").innerHTML="how are you";
+}
+   </script>
+</body>
+</html>
