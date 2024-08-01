@@ -25,3 +25,12 @@ var milliseconds = (new Date()).getMilliseconds();
 function name1(){
     console.log("hellow");
 }
+name1()
+var year=(new Date()).getFullYear();
+var y=(new Date()).getMonth();
+var e=(new Date()).setMinutes();
+console.log(year);
+console.log(y);
+console.log(e);
+var now=new Date();
+console.log(now.toUTCString());

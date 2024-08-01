@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #mylinks{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="topnav">
+        <a href="#home" class="active">logo</a>
+        <div id="mylinks">
+            <a href="#news">news</a>
+            <a href="#contact">contact</a>
+            <a href="#about">about</a>
+        </div>
+        <a href="#" class="icon" >
+            <i class="fa fa-bars" onclick="myfunction()"></i>
+        </a>
+    </div>
+    <script>
+        function myfunction(){
+            var x=document.getElementById("mylinks");
+            if(x.style.display==="none"){
+                x.style.display="block";
+            }
+            else{
+                x.style.display="block";
+            }
+        }
+    </script>
 </body>
 </html>
